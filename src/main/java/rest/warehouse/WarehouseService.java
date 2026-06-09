@@ -6,15 +6,9 @@ import rest.model.WarehouseData;
 @Service
 public class WarehouseService {
 	
-	public String getGreetings( String inModule ) {
-        return "Greetings from " + inModule;
-    }
-
-    public WarehouseData getWarehouseData( String inID ) {
-    	
+    public WarehouseData getWarehouseData() {
     	WarehouseSimulation simulation = new WarehouseSimulation();
-        return simulation.getData( inID );
-        
+        return simulation.getData();
     }
     
 }
